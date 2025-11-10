@@ -17,3 +17,17 @@ def dropout_summary(df):
   rate = dropout_rate(df)
   cause = most_common_dropout_cause(df)
   return rate, cause
+
+def dropout_by_career(df):
+    if "career" not in df.columns:
+        return {}
+    results = {}
+    careers = df["career"].unique()
+    for career in careers:
+        subset = df[df["career"] == career]
+        total = len(subset)
+        dropped = len(subset[subset["status"] == "Dropped"])
+        if total > 0:
+            rate = round((dropped / total) * 100,2)
+            results[career] = rate
+    return results

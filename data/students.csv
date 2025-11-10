@@ -1,11 +1,11 @@
-id,status,cause
-1,Active
-2,Dropped,financial
-3,Active
-4,Dropped,family   
-5,Active
-6,Dropped,academic
-7,Dropped,financial
-8,Active
-9,Active
-10,Dropped,financial
+id,status,cause,career
+1,Active,,Medicine
+2,Dropped,financial,Engineering
+3,Active,,Education
+4,Dropped,family   ,Education
+5,Active,,Psychology
+6,Dropped,academic,Medicine
+7,Dropped,financial,Education
+8,Active,,Engineering
+9,Active,,Medicine
+10,Dropped,financial,Psychology
